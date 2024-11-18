@@ -11,11 +11,10 @@ If you find our paper useful for your research and applications, please kindly c
 
 ```latex
 @inproceedings{
-li2024low,
+lilow,
 title={Low Precision Local Training is Enough for Federated Learning},
-author={Zhiwei Li and Yiqiu LI and Binbin Lin and Zhongming Jin and WEIZHONG ZHANG},
+author={Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang},
 booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-year={2024},
-url={https://openreview.net/forum?id=vvpewjtnvm}
+year={2024}
 }
 ```
