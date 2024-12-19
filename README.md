@@ -17,15 +17,16 @@ To get started with the implementation of our method, you can clone the reposito
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repository.git
-cd your-repository
+git clone https://github.com/digbangbang/LPT-FL.git
 
 # Install dependencies
 pip install -r requirements.txt
 
 # Run the demo script
-python train.py --precision 8
+python main.py --dataset fmnist --alpha 0.01 --model_name ConvNet --c_rounds 200 --project_name FL_experiment --block_dim BC --use_quantization --quantization_bits 8 --moving_average --ma_start 1 --moving_weight 0.9 --batch_size 32
 ```
+
+The whole implementation of **FedAvg** are in ALL.sh, you can change the parameters to run other FL methods.
 
 ## Cite
 
