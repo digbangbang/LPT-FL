@@ -39,7 +39,7 @@ The whole implementation of **FedAvg** are in ALL.sh, you can change the paramet
 ## Acknowledgements
 This project uses modified code from the following projects:
 
-[SWALP](https://github.com/stevenygd/SWALP): developed by Cornell-CS. Block floating point quantization codes reused for low precision training. See models/quantizer.py.
+- [SWALP](https://github.com/stevenygd/SWALP): developed by Cornell-CS. Block floating point quantization codes reused for low precision training. See models/quantizer.py.
 
 ## Cite
 
