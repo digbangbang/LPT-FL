@@ -1,5 +1,11 @@
 # [NeurIPS 2024] Low Precision Local Training is Enough for Federated Learning
 
+This repository contains a PyTorch implementation of the paper:
+
+Low Precision Local Training is Enough for Federated Learning.
+
+Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang
+
 ## Introduction
 In this paper, we propose an efficient Federated Learning (FL) paradigm that significantly reduces the communication and computation costs during training. The key features of our approach are:
 
