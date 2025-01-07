@@ -13,7 +13,7 @@ In this paper, we propose an efficient Federated Learning (FL) paradigm that sig
 
 1. **Low-Precision Local Training**: The local models at clients are trained using low-precision operations (as low as 8 bits), which reduces both the computational load and memory usage without compromising performance.
    
-2. **Low-Precision Communication**: The local models are also communicated to the server in low-precision format, minimizing the communication overhead typically required for high-precision model updates.
+2. **Low-Precision Communication**: The client and server send low-precision model weights to each other, reducing communication overhead.
 
 3. **High-Precision Aggregation**: Only the model aggregation in the server is performed using high-precision computation, ensuring that the final model accuracy is preserved. Our method is compatible with existing FL algorithms, making it easy to integrate and deploy in real-world systems.
 
