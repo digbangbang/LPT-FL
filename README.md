@@ -31,14 +31,24 @@ Our method can maintain, and sometimes even surpass, the accuracy of standard FL
 
 Due to the quantization noise introduced during local training, the overfitting problem is alleviated.
 
-## Introduction
+## Introduction & Methods
 In this paper, we propose an efficient FL paradigm that significantly reduces the communication and computation costs during training. The key features of our approach are:
 
-1. **Low-Precision Local Training**: The local models at clients are trained using low-precision operations (as low as 8 bits), which reduces both the computational load and memory usage without compromising performance.
-   
+1. **Low-Precision Local Training**: The local models at clients are trained using low-precision operations (as low as 8 bits), which reduces both the computational load and memory usage.
+
+$$w^{k} _{t+1} = Q (w^{k} _{t} - \eta _t \nabla F_k(w^{k} _{t}; \xi^k _t))$$
+
 2. **Low-Precision Communication**: The client and server send low-precision model weights to each other, reducing communication overhead.
 
-3. **High-Precision Aggregation**: Only the model aggregation in the server is performed using high-precision computation, ensuring that the final model accuracy is preserved. Our method is compatible with existing FL algorithms, making it easy to integrate and deploy in real-world systems.
+$$w^{k} _{t} \leftarrow Q (\bar{w}_t)$$
+
+3. **High-Precision Aggregation**: Only the model aggregation in the server is performed using high-precision computation, ensuring that the final model accuracy is preserved.
+
+$$w _{t+E} = \sum _{k\in S_t} \frac{p_k}{q_t} w^{k} _{t+E}$$
+
+$~~~~~~~$ To metigate the quantization error, we maintain a moving average in the server.
+
+$$\bar{w} _{t} = \lambda \bar{w} _{t-E}+(1-\lambda)w_t$$
 
 Our experimental results show that models trained with 8-bit precision perform comparably to those trained with full precision, demonstrating the effectiveness of our approach in maintaining high performance while significantly reducing resource consumption.
 
