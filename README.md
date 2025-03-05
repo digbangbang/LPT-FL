@@ -54,7 +54,7 @@ Our experimental results show that models trained with 8-bit precision perform c
 
 ## Code
 
-To get started with the implementation of our method, you can clone the repository and follow the instructions below.
+Our implementation has minimal dependencies. Additionally, the GPUs used in the experiments are the GTX 4090 and A6000. To get started with the implementation of our method, you can clone the repository and follow the instructions below.
 
 ```bash
 # Clone the repository
@@ -67,7 +67,27 @@ pip install -r requirements.txt
 python main.py --dataset fmnist --alpha 0.01 --model_name ConvNet --c_rounds 200 --project_name FL_experiment --block_dim BC --use_quantization --quantization_bits 8 --moving_average --ma_start 1 --moving_weight 0.9 --batch_size 32
 ```
 
-The whole implementation of **FedAvg** are in ALL.sh, you can change the parameters to run other FL methods.
+The whole implementation of **FedAvg** are in ALL.sh, other FL methods are as followings.
+
+**FedProx** experiments:
+```
+python main.py --dataset cifar10 --alpha 0.01 --model_name ConvNet --c_rounds 200 --aggregation_mode fedprox --lambda_fedprox 0.1 --project_name FL_experiment_FedProx --block_dim BC --use_quantization --quantization_bits 8 --moving_average --ma_start 1 --moving_weight 0.9 --batch_size 32
+```
+
+**ABAvg** experiments:
+```
+python main.py --dataset cifar10 --alpha 0.01 --model_name ConvNet --c_rounds 200 --aggregation_mode abavg --project_name FL_experiment_abavg --block_dim BC --use_quantization --quantization_bits 8 --moving_average --ma_start 1 --moving_weight 0.9 --batch_size 32
+```
+
+**FedTGP** experiments:
+```
+python main.py --dataset cifar10 --alpha 0.01 --model_name ConvNet --c_rounds 200 --aggregation_mode fedtgp --project_name FL_experiment_FedTGP --block_dim BC --use_quantization --quantization_bits 8 --moving_average --ma_start 1 --moving_weight 0.9 --batch_size 32 --lr 1e-3 --lr_schedule CosineAnnealingLR
+```
+
+**FedGen** experiments:
+```
+python main.py --dataset cifar10 --alpha 0.01 --model_name ConvNet --c_rounds 200 --aggregation_mode fedgen --project_name FL_experiment_Fedgen --block_dim BC --use_quantization --quantization_bits 8 --moving_average --ma_start 1 --moving_weight 0.9 --batch_size 32 --lr 1e-4 --lr_schedule CosineAnnealingLR
+```
 
 ## Acknowledgements
 This project uses modified code from the following projects:
