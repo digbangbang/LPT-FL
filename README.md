@@ -21,10 +21,15 @@ Our method outperforms other efficient Federated Learning (FL) methods on accura
 
 Our method can maintain, and sometimes even surpass, the accuracy of standard FL approaches. Moreover, it is compatible with various FL methods, as shown in the table below.
 
-|normal|regularization-based|data-dependent knowledge distill|data-free knowledge distill|
+|Normal|Regularization-based|Data-dependent knowledge distill|Data-free knowledge distill|
 |:-:|:-:|:-:|:-:|
 |[FedAVG](https://arxiv.org/pdf/1602.05629)|[FedProx](https://arxiv.org/pdf/1812.06127)|[ABAvg](https://ieeexplore.ieee.org/document/9521631)|[FedFTG](https://arxiv.org/pdf/2203.09249), [FedGen](https://arxiv.org/pdf/2105.10056)|
 
+3. **Reduction of local training overfitting**
+
+
+
+Due to the quantization noise introduced during local training, the overfitting problem is alleviated.
 
 ## Introduction
 In this paper, we propose an efficient FL paradigm that significantly reduces the communication and computation costs during training. The key features of our approach are:
