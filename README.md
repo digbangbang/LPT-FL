@@ -105,11 +105,12 @@ This project uses modified code from the following projects:
 If you find our paper useful for your research and applications, please kindly cite using this BibTeX:
 
 ```latex
-@inproceedings{
-lilow,
-title={Low Precision Local Training is Enough for Federated Learning},
-author={Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang},
-booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
-year={2024}
+@article{li2025low,
+  title={Low Precision Local Training is Enough for Federated Learning},
+  author={Li, Zhiwei and Li, Yiqiu and Lin, Binbin and Jin, Zhongming and Zhang, Weizhong},
+  journal={Advances in Neural Information Processing Systems},
+  volume={37},
+  pages={90160--90197},
+  year={2025}
 }
 ```
