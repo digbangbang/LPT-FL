@@ -17,7 +17,7 @@ Our method outperforms other efficient Federated Learning (FL) methods on accura
 
 ![fedavg](assets/fedavg.png)
 
-![fedavg](assets/otherfl.png)
+![otherfl](assets/otherfl.png)
 
 Our method can maintain, and sometimes even surpass, the accuracy of standard FL approaches. Moreover, it is compatible with various FL methods, as shown in the table below.
 
@@ -27,7 +27,7 @@ Our method can maintain, and sometimes even surpass, the accuracy of standard FL
 
 3. **Reduction of local training overfitting**
 
-
+![overfitting](assets/leov.png)
 
 Due to the quantization noise introduced during local training, the overfitting problem is alleviated.
 
