@@ -6,9 +6,16 @@ Low Precision Local Training is Enough for Federated Learning.
 
 Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang
 
+## Strength
+1. **Better performance and lower cost**
+
 ![acc vs cost](assets/lowp.png)
 
-Our method outperforms other Federated Learning (FL) methods on accuracy and traning & communication cost.
+Our method outperforms other efficient Federated Learning (FL) methods on accuracy and traning & communication cost.
+
+2. **Compatibility with multiple FL methods**
+
+
 
 ## Introduction
 In this paper, we propose an efficient FL paradigm that significantly reduces the communication and computation costs during training. The key features of our approach are:
