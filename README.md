@@ -2,7 +2,7 @@
 
 This repository contains a PyTorch implementation of the paper:
 
-Low Precision Local Training is Enough for Federated Learning.
+[Low Precision Local Training is Enough for Federated Learning.](https://openreview.net/pdf?id=vvpewjtnvm)
 
 Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang
 
@@ -11,10 +11,19 @@ Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang
 
 ![acc vs cost](assets/lowp.png)
 
-Our method outperforms other efficient Federated Learning (FL) methods on accuracy and traning & communication cost.
+Our method outperforms other efficient Federated Learning (FL) methods on accuracy and traning & communication cost. We take [HeteroFL](https://github.com/diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients) and [SplitMix](https://github.com/illidanlab/SplitMix) for example, as both of them contribute to decrease training & communication cost during FL.
 
 2. **Compatibility with multiple FL methods**
 
+![fedavg](assets/fedavg.png)
+
+![fedavg](assets/otherfl.png)
+
+Our method can maintain, and sometimes even surpass, the accuracy of standard FL approaches. Moreover, it is compatible with various FL methods, as shown in the table below.
+
+|normal|regularization-based|data-dependent knowledge distill|data-free knowledge distill|
+|:-:|:-:|:-:|:-:|
+|[FedAVG](https://arxiv.org/pdf/1602.05629)|[FedProx](https://arxiv.org/pdf/1812.06127)|[ABAvg](https://ieeexplore.ieee.org/document/9521631)|[FedFTG](https://arxiv.org/pdf/2203.09249), [FedGen](https://arxiv.org/pdf/2105.10056)|
 
 
 ## Introduction
