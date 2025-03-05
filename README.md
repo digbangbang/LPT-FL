@@ -89,6 +89,12 @@ python main.py --dataset cifar10 --alpha 0.01 --model_name ConvNet --c_rounds 20
 python main.py --dataset cifar10 --alpha 0.01 --model_name ConvNet --c_rounds 200 --aggregation_mode fedgen --project_name FL_experiment_Fedgen --block_dim BC --use_quantization --quantization_bits 8 --moving_average --ma_start 1 --moving_weight 0.9 --batch_size 32 --lr 1e-4 --lr_schedule CosineAnnealingLR
 ```
 
+## Results
+
+![results](assets/fedavgout.png)
+
+The performance of FedAvg with 8 bit local training surpasses the original version on 4 datasets.
+
 ## Acknowledgements
 This project uses modified code from the following projects:
 
