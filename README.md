@@ -11,7 +11,7 @@ Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang
 
 ![acc vs cost](assets/lowp.png)
 
-Our method outperforms other efficient Federated Learning (FL) methods on accuracy and traning & communication cost. We take [HeteroFL](https://github.com/diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients) and [SplitMix](https://github.com/illidanlab/SplitMix) for example, as both of them contribute to decrease training & communication cost during FL.
+$~~~~~~~$ Our method outperforms other efficient Federated Learning (FL) methods on accuracy and traning & communication cost. We take [HeteroFL](https://github.com/diaoenmao/HeteroFL-Computation-and-Communication-Efficient-Federated-Learning-for-Heterogeneous-Clients) and [SplitMix](https://github.com/illidanlab/SplitMix) for example, as both of them contribute to decrease training & communication cost during FL.
 
 2. **Compatibility with multiple FL methods**
 
@@ -19,7 +19,7 @@ Our method outperforms other efficient Federated Learning (FL) methods on accura
 
 ![otherfl](assets/otherfl.png)
 
-Our method can maintain, and sometimes even surpass, the accuracy of standard FL approaches. Moreover, it is compatible with various FL methods, as shown in the table below.
+$~~~~~~~$ Our method can maintain, and sometimes even surpass, the accuracy of standard FL approaches. Moreover, it is compatible with various FL methods, as shown in the table below.
 
 |Normal|Regularization-based|Data-dependent knowledge distill|Data-free knowledge distill|
 |:-:|:-:|:-:|:-:|
@@ -29,7 +29,7 @@ Our method can maintain, and sometimes even surpass, the accuracy of standard FL
 
 ![overfitting](assets/leov.png)
 
-Due to the quantization noise introduced during local training, the overfitting problem is alleviated.
+$~~~~~~~$ Due to the quantization noise introduced during local training, the overfitting problem is alleviated.
 
 ## Introduction & Methods
 In this paper, we propose an efficient FL paradigm that significantly reduces the communication and computation costs during training. The key features of our approach are:
