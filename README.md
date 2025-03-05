@@ -6,10 +6,12 @@ Low Precision Local Training is Enough for Federated Learning.
 
 Zhiwei, Li and Yiqiu, Li and Binbin, Lin and Zhongming, Jin and Weizhong, Zhang
 
-![image](https://github.com/user-attachments/assets/09afd1d8-9987-4d6a-a3c3-a0f62a362ee4)
+![acc vs cost](assets/lowp.png)
+
+Our method outperforms other Federated Learning (FL) methods on accuracy and traning & communication cost.
 
 ## Introduction
-In this paper, we propose an efficient Federated Learning (FL) paradigm that significantly reduces the communication and computation costs during training. The key features of our approach are:
+In this paper, we propose an efficient FL paradigm that significantly reduces the communication and computation costs during training. The key features of our approach are:
 
 1. **Low-Precision Local Training**: The local models at clients are trained using low-precision operations (as low as 8 bits), which reduces both the computational load and memory usage without compromising performance.
    
